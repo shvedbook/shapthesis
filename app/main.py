@@ -181,7 +181,3 @@ def predict_production_year(data: Codicological_Data):
     buf.seek(0)
     print(StreamingResponse(buf, media_type="image/png"))
     return StreamingResponse(buf, media_type="image/png")
-
-
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
